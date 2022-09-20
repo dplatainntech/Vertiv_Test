@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formatos.PreOrden.POInspeccionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inspección EPP"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(antes del inicio de labores) condiciones óptimas:"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Inspc_radioB_Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SI" />
+
+                <RadioButton
+                    android:id="@+id/Inspc_radioB_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/Inspc_editText_no"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/radiosmultitext"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indicar si los trabajos implicarán alguna de las siguientes actividades:"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <CheckBox
+                android:id="@+id/Inspc_check1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrada en espacios confinado" />
+
+            <CheckBox
+                android:id="@+id/Inspc_check2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trabajos en caliente" />
+
+            <CheckBox
+                android:id="@+id/Inspc_check3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trabajos en equipos energizados (>50V)" />
+
+            <CheckBox
+                android:id="@+id/Inspc_check4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N/A" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/Inspc_Texview_nombreArchivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adjuntar Permiso"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/PO_fotoAdj"
+                    android:layout_width="118dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/foto" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿ Realizará trabajos en Altura (Superior a 1.80 metros)?"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Inspc_radioB_Si2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SI" />
+
+                <RadioButton
+                    android:id="@+id/Inspc_radioB_No2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Existen condiciones inseguras en el lugar de trabajo?"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Inspc_radioB_Si3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SI" />
+
+                <RadioButton
+                    android:id="@+id/Inspc_radioB_No3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONDICIÓN INSEGURA"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué podría causar un accidente? (Bloqueo de rutas de evacuación, escaleras inseguras, pobre orden y limpieza, iluminación deficiente, etc.)"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/Inspc_editText_CausasAcc"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@drawable/radiosmultitext"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEDIDAS CORRECTIVAS"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué debe realizarse para evitar un accidente? (Mantener orden y limpieza, colocar iluminación de respaldo, etc.)"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/Inspc_edit_evitarAc"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:background="@drawable/radiosmultitext"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:id="@+id/Inspec_btn_Cancelar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/Inspec_btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

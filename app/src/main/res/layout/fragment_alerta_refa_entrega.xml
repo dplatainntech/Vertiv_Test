@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alerts.AlertaRefa"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/info"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu solicitud fue creada con éxito y se generó el siguiente folio para su atención."
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/mensajeAlerta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+
+        <Button
+            android:id="@+id/genricoContinuar"
+            android:layout_width="106dp"
+            android:layout_height="22dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnnaranja"
+            android:text="CONTINUAR"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

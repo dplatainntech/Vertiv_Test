@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formatos.PreOrden.POPrevencionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Medidas de Prevención de Riesgos"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usar dispositivos de elevación mecánica" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Sustituir químicos tóxicos o materiales" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aislar el ruido generado por equipo" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colocar guardas protectoras en máquinas" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instalar plataformas y andamios" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instalar sistema o puntos de anclaje" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instalar iluminación artificial" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instalar disyuntor o interruptor automático" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instalar sistema de puesta a tierra" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mantener Orden y limpieza del área" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Señalizar área de trabajo" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bloquear y etiquetar fuentes de energía" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instalar muros para contener derrames" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permiso de Trabajo, reunión pre-trabajo" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proced. de Trabajo, Instructivos" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supervisión permanente del trabajo" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usar herramientas aisladas" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Equipo de Protección Personal (EPP)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="Otro" />
+
+                <EditText
+                    android:id="@+id/Reiesgo_Edt_otro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Preven_btn_Cancelar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/Preven_btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

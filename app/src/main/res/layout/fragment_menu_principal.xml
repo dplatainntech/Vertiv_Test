@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipalFragment"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+
+
+    <LinearLayout
+        android:id="@+id/MenuLL_Asignaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:src="@drawable/asignaciones" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Asignaciones"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/MenuLL_PreOrden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/pretrabajo" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pre Trabajo"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/MenuLL_Servicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/servicios" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Servicio"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/MenuLL_Calidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:src="@drawable/calidad" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calidad"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/COnsultaFolios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/lupa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Consulta de Folios"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/DocsProceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/enproceso" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Doc. en Proceso"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/docsTermin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:src="@drawable/preorden" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Doc. Terminados"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/GenPaquete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="72dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/paquete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Generar Paquete"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="vertical"
+                android:background="@android:color/black">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

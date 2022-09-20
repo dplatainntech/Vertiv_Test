@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Formatos.CancelasDialogFragment"
+    android:background="@drawable/radiuswhite"
+    android:padding="30dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/warning"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si cancelas el proceso, se perderán los datos capturados."
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/dialogoCancelar_cancelar"
+            android:layout_width="106dp"
+            android:layout_height="22dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btngris"
+            android:text="CANCELAR"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/dialogoCancelar_continuar"
+            android:layout_width="106dp"
+            android:layout_height="22dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnnaranja"
+            android:text="CONTINUAR"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

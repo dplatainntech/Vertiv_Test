@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Formatos.Garantias.GarantiasMateriales"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garantías"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/barracolores"
+            android:paddingTop="-50dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parte y/o Materiales Utilizados"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxNa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="N/A" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cantidad:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/cantidad8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No. Parte:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/parte8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/especifica8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Descripción"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Equipo de Medición"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxNa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:layout_gravity="right"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipo: "
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/quipo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No. ID:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"/>
+
+                        <EditText
+                            android:id="@+id/nid1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:id="@+id/fecha1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"/>
+
+                        <ImageView
+                            android:id="@+id/btnfecha1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/asignaciones" />/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipo: "
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/quipo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No. ID:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"/>
+
+                        <EditText
+                            android:id="@+id/nid2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:id="@+id/fecha2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"/>
+
+                        <ImageView
+                            android:id="@+id/btnfecha2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/asignaciones" />/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipo: "
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/quipo3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No. ID:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"/>
+
+                        <EditText
+                            android:id="@+id/nid3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:id="@+id/fecha3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btnfecha3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/asignaciones" />/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipo: "
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/quipo4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No. ID:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"/>
+
+                        <EditText
+                            android:id="@+id/nid4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:id="@+id/fecha4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btnfecha4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/asignaciones" />/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipo: "
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/quipo5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No. ID:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"/>
+
+                        <EditText
+                            android:id="@+id/nid5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:id="@+id/fecha5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btnfecha5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/asignaciones" />/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipo: "
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/quipo6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No. ID:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"/>
+
+                        <EditText
+                            android:id="@+id/nid6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:paddingLeft="7dp"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:id="@+id/fecha6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btnfecha6"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/asignaciones" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Cancelar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

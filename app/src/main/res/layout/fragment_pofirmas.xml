@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Formatos.PreOrden.POFirmasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/nombreFirma1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:hint="Nombre Completo"/>
+
+            <Spinner
+                android:id="@+id/spinerFirma1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFirma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_firma_gris"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombreFirma2"
+                android:layout_marginBottom="5dp"
+                android:hint="Nombre Completo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinerFirma2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFirma2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_firma_gris"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombreFirma3"
+                android:layout_marginBottom="5dp"
+                android:hint="Nombre Completo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinerFirma3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFirma3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_firma_gris"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombreFirma4"
+                android:layout_marginBottom="5dp"
+                android:hint="Nombre Completo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinerFirma4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFirma4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_firma_gris"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombreFirma5"
+                android:layout_marginBottom="5dp"
+                android:hint="Nombre Completo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinerFirma5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFirma5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_firma_gris"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombreFirma6"
+                android:layout_marginBottom="5dp"
+                android:hint="Nombre Completo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinerFirma6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiosedittext"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnFirma6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_firma_gris"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/firmas_btn_Cancelar"
+            android:layout_width="106dp"
+            android:layout_height="22dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btngris"
+            android:text="CANCELAR"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/firmas_btn_Guardar"
+            android:layout_width="106dp"
+            android:layout_height="22dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnnaranja"
+            android:text="GUARDAR"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

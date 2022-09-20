@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formatos.PreOrden.PORiesgosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Riesgos Asociados a la Actividad"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proyección de partículas" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atrapamiento" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Golpes/cortes" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quemaduras" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caída de materiales y/o cargas" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caída al mismo nivel" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caída a distinto nivel / Caída de altura" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Orden y limpieza deficientes" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro personal trabajando en el área" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choque eléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arco eléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuego / explosión" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposición a ruido" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposición a vibraciones" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fatiga visual (Iluminación pobre)" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposición a altas o bajas temperaturas" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deficiencia de oxígeno" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposición a gases, humos, vapores" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposición a polvo" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sobre esfuerzo por manipulación manual de cargas" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manipulación productos químicos" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ruido" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="Otro" />
+
+                <EditText
+                    android:id="@+id/Reiesgo_Edt_otro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:text=""
+                    android:paddingLeft="7dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Reiesgo_btn_Cancelar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/Reiesgo_btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

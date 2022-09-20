@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formatos.PreOrden.POeppFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Equipo de Protección Personal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EPP Básico:" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Casco" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gafas protectoras" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protectores auditivos (tapones, orejeras)" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zapatos de seguridad" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guantes de trabajo (cuero, multipropósito)" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barbiquejo" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EPP riesgo eléctrico:" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gafas de seguridad" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Casco dieléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zapatos dieléctricos" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guantes dieléctricos" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sobreguante de cuero" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Careta contra arco eléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balaclava (capucha) contra arco eléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traje contra arco eléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protectores auditivos contra arco eléctrico" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mangas dieléctricas" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otros EPP:" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protección contra caídas (arnés, línea de vida)" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protección respiratoria. (Mascarilla, respirador con filtro , línea de aire)" />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protección soldadura: Delantal de cuero, guantes, escarpines, etc." />
+
+            <CheckBox
+                android:id="@+id/Reiesgo_checkBox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protección contra químicos: Delantal, guantes de nitrilo,careta/pantalla facial" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adicionales. Especifique:" />
+
+                <EditText
+                    android:id="@+id/Reiesgo_Edt_otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:paddingLeft="7dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/EPP_btn_Cancelar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/EPP_btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

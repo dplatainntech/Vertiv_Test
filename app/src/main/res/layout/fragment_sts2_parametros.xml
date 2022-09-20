@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Formatos.STS2.STS2ParametrosFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STS2"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/barracolores"
+            android:paddingTop="-50dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <!--Modulo1-->
+            <Button
+                android:id="@+id/buttonM1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revisión Fisica" />
+            <LinearLayout
+                android:id="@+id/LyM1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión del cableado de Potencia." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de conexiones." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de componentes de Potencia." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de SCR s." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisar Historial de alarmas." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de Tarjetas." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión del Panel de Control." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de capacitores de potencia." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de fuente de alimentación." />
+
+                <CheckBox
+                    android:id="@+id/Reiesgo_checkBox10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión de Set Points." />
+
+            </LinearLayout>
+
+            <!--Modulo2-->
+            <Button
+                android:id="@+id/buttonM2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parámetros de Entrada" />
+            <LinearLayout
+                android:id="@+id/LyM2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <!--Layout Click-->
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!-- CLICK CAMPO 1  -->
+                    <LinearLayout
+                        android:id="@+id/clickcampoA1"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="#B7B5B5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fuente Preferente “A”"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <!-- CLICK CAMPO 2  -->
+                    <LinearLayout
+                        android:id="@+id/clickcampoA2"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="#E5E3E3"
+                        android:layout_marginLeft="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Fuente Emergente “B”"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vistaI_A1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="VOLTAJE"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CORRIENTE"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="A-B"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/VoltajePreAB"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="B-C"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/VoltajePreBC"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="C-A"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/VoltajePreCA"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="A"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/CorrientePreA"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="B"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/CorrientePreB"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="C"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/CorrientePreC"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/vistaI_A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="VOLTAJE"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CORRIENTE"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="A-B"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/VoltajeEmeAB"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="B-C"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/VoltajeEmeBC"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="C-A"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/VoltajeEmeCA"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="A"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/CorrienteEmeA"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="B"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/CorrienteEmeB"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="C"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/CorrienteEmeC"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:textAlignment="center"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Modulo3-->
+            <Button
+                android:id="@+id/buttonM3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parámetros de Control" />
+            <LinearLayout
+                android:id="@+id/LyM3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+                <!-- TITULOS -->
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!-- CLICK CAMPO 1  -->
+                    <LinearLayout
+                        android:id="@+id/clickcampoB1"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="#B7B5B5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Complementos"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <!-- CLICK CAMPO 2  -->
+                    <LinearLayout
+                        android:id="@+id/clickcampoB2"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="#E5E3E3"
+                        android:layout_marginLeft="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Parámetros Control"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <!-- CLICK CAMPO 3  -->
+                    <LinearLayout
+                        android:id="@+id/clickcampoB3"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="#E5E3E3"
+                        android:layout_marginLeft="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Parámetros Salida"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Modulo1-->
+                <LinearLayout
+                    android:id="@+id/vistaI_B1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="Temperatura SCR s °C"
+                                android:textColor="@android:color/black"/>
+
+                            <EditText
+                                android:id="@+id/TemperaturaSCR"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:maxLength="5"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="No. De Transferencias"
+                                android:textColor="@android:color/black"/>
+
+                            <EditText
+                                android:id="@+id/NoTransferencias"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:maxLength="5"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="Limpieza general"
+                                android:textColor="@android:color/black"/>
+
+                            <EditText
+                                android:id="@+id/LimpiezaGeneral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:textAlignment="center"
+                                android:maxLength="10"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="Ajuste de Horarios"
+                                android:textColor="@android:color/black"/>
+
+                            <EditText
+                                android:id="@+id/AjusteHorarios"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:textAlignment="center"
+                                android:maxLength="10"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--Modulo2-->
+                <LinearLayout
+                    android:id="@+id/vistaI_B2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Power Supply A"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Power Supply B"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+48VDC (TP1)"
+                                    android:textColor="@android:color/black" />
+
+                                <EditText
+                                    android:id="@+id/A48VDCTP1"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+24VDC (TP5)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/A24VDCTP5"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+7.4VDC (TP7)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/A74VDCTP7"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+5VDC (TP8)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/A5VDCTP8"
+                                    android:layout_width="70dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+3.3VDC (TP6)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/A33VDCTP6"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+24VDC (TP5)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/B24VDCTP5"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+7.4VDC (TP7)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/B74VDCTP7"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="+5VDC (TP8)"
+                                    android:textColor="@android:color/black"/>
+
+                                <EditText
+                                    android:id="@+id/B5VDCTP8"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/radiosedittext"
+                                    android:ems="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--Modulo3-->
+                <LinearLayout
+                    android:id="@+id/vistaI_B3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="KVA"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/KVA"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center"
+                            android:maxLength="5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="KW"
+                            android:textColor="@android:color/black"/>
+
+                        <EditText
+                            android:id="@+id/KW"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radiosedittext"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center"
+                            android:maxLength="5" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Carga de fuente:"
+                            android:textColor="@android:color/black"/>
+
+                        <CheckBox
+                            android:id="@+id/CargaFuenteA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@android:color/black"/>
+
+                        <CheckBox
+                            android:id="@+id/CargaFuenteB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Cancelar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="firma_Clente">
+    <item ></item>
+    <item>Vertiv CE</item>
+    <item>Contratista</item>
+    <item>Cliente</item>
+    <item>Cliente Final</item>
+</string-array>
+
+    <string-array name="firma_PT">
+        <item ></item>
+        <item>Vertiv</item>
+        <item>Contratista</item>
+        <item>Cliente</item>
+    </string-array>
+
+    <string-array name="tipoServicioGral">
+        <item > </item>
+        <item>Correctivo (24)</item>
+        <item>Emergencias (100)</item>
+        <item>Mantenimiento Preventivo (20)</item>
+        <item>Reemplazo de Baterías (12)</item>
+        <item>Servicio Puntual (205)</item>
+        <item>Otro (especifique)</item>
+    </string-array>
+
+
+
+
+    <string-array name="frecuenciaGral">
+        <item ></item>
+        <item>24-7</item>
+        <item>Mensual</item>
+        <item>Bimestral</item>
+        <item>Trimestral</item>
+        <item>Semestral</item>
+        <item>Anual</item>
+        <item>Evento Unico</item>
+
+    </string-array>
+
+    <string-array name="TipoServicioBN1">
+        <item ></item>
+        <item>Mantenimiento Preventivo (20)</item>
+        <item>Incidencia (100)</item>
+        <item>Orden de Trabajo (24)</item>
+
+    </string-array>
+
+    <string-array name="bestelEvaluacion">
+        <item ></item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Malo</item>
+
+    </string-array>
+
+    <string-array name="calidadTiposervicio">
+        <item ></item>
+        <item >Arranque (30)</item>
+        <item >Arranque Equipo no Vertiv (31)</item>
+        <item >Correctivo (24)</item>
+        <item >Emergencia (100)</item>
+        <item >Instalación</item>
+        <item >Mantenimiento Preventivo (20)</item>
+        <item >Reemplazo de Baterías (12)</item>
+        <item >Servicio Puntual (205)</item>
+        <item >Incidencia (100)</item>
+        <item >Orden de Trabajo (24)</item>
+        <item >Garantía (10)</item>
+        <item >Otro (Especifique)</item>
+    </string-array>
+
+    <string-array name="garantiaTiposervicio">
+        <item ></item>
+        <item >Garantía (10)</item>
+    </string-array>
+    <string-array name="garantiafrecuenciaGral">
+        <item ></item>
+        <item>Evento Unico</item>
+
+    </string-array>
+    <string-array name="TiposervicioGenerico">
+        <item ></item>
+        <item >Correctivo (24)</item>
+        <item >Emergencia (100)</item>
+        <item >Mantenimiento Preventivo (20)</item>
+        <item >Servicio Puntual (205)</item>
+        <item >Otro (Especifique)</item>
+    </string-array>
+
+    <string-array name="calidadTipoEquipo">
+        <item ></item>
+        <item >AAP</item>
+        <item >AA CONFORT</item>
+        <item >DC POWER</item>
+        <item >GENERADORES</item>
+        <item >PLANTAS DE EMERGENCIA</item>
+        <item >SUBESTACIONES</item>
+        <item >UPS</item>
+        <item >MONITOREO</item>
+    </string-array>
+
+    <string-array name="tiposervicioServ">
+        <item ></item>
+        <item >Arranque (30)</item>
+        <item >Arranque Equipo no Vertiv (31)</item>
+        <item >Correctivo (24)</item>
+        <item >Emergencia (100)</item>
+        <item >Mantenimiento Preventivo (20)</item>
+        <item >Reemplazo de Baterías (12)</item>
+        <item >Servicio Puntual (205)</item>
+        <item >Otro (Especifique)</item>
+    </string-array>
+
+    <string-array name="tipoGarantiaGarantia">
+        <item ></item>
+        <item >Sitio</item>
+        <item >Reemplazo</item>
+
+    </string-array>
+    <string-array name="tiposervicioDCpower">
+        <item ></item>
+        <item >Arranque (30)</item>
+        <item >Arranque Equipo no Vertiv (31)</item>
+        <item >Mantenimiento Preventivo (20)</item>
+        <item >Servicio Puntual (205)</item>
+        <item >Otro (Especifique)</item>
+    </string-array>
+
+
+
+</resources>

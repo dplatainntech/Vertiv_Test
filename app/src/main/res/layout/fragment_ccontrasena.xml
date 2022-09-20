@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccionesM.CContrasena"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Contraseña"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/correoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo usuario"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/radiosedittext"
+        android:textAlignment="center"
+        android:hint="Contraseña Actual"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/radiosedittext"
+        android:textAlignment="center"
+        android:hint="Contraseña Nueva"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/radiosedittext"
+        android:textAlignment="center"
+        android:hint="Confirmar Contraseña"
+        android:textSize="18dp"
+        android:padding="3dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btoSincronizar"
+        android:layout_width="206dp"
+        android:layout_height="22dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btnnaranja"
+        android:text="Actualizar Contraseña"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

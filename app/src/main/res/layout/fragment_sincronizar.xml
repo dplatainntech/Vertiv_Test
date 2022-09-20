@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccionesM.Sincronizar">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sincronizar"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sincronizar todo"
+            android:textColor="@android:color/black"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxTodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textDirection="firstStrongLtr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginBottom="40dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxtask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tareas" />
+
+        <CheckBox
+            android:id="@+id/checkBoxpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Folios Pre-Trabajo" />
+
+        <CheckBox
+            android:id="@+id/checkBoxcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clientes" />
+
+        <CheckBox
+            android:id="@+id/checkBox11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catálogo Bestel" />
+
+        <CheckBox
+            android:id="@+id/checkBoxbestel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bestel" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formatos Terminados" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Su última Sincronización fue"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/ultimaSinc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Miercoles 12 Nov-2019 01:24pm"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/btoSincronizar"
+            android:layout_width="106dp"
+            android:layout_height="22dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnnaranja"
+            android:text="Sincronizar"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

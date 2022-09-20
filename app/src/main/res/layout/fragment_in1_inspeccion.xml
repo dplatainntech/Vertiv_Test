@@ -1,0 +1,4090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Formatos.IN1.IN1Inspeccion"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Bestel N1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:paddingTop="-50dp"
+            app:srcCompat="@drawable/barracolores" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--Modulo1-->
+            <Button
+                android:id="@+id/Modulo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aire Acondicionado" />
+            <LinearLayout
+                android:id="@+id/contenedorM1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Temperatura/Humedad"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AATemperaturaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbM1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/AATemperaturaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Condensadora/Chillers"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AACondensadoraEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AACondensadoraComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Evaporadora/UMA"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AAEvaporadoraEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AAEvaporadoraComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Serpentin"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AASerpentinEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AASerpentinComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fugas de Gas"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AAFugaGasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AAFugaGasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Alimentación"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AAAlimentacionEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AAAlimentacionComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Filtros"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AAFiltrosEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AAFiltrosComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Limpieza en General"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/AALimpiezaGeneralEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/AALimpiezaGeneralComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo2-->
+            <Button
+                android:id="@+id/Modulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio/Cuarto de Equipos" />
+            <LinearLayout
+                android:id="@+id/contenedorM2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Iluminación/Alumbrado"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECIluminaciionEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECIluminaciionComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pintura en Muros"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECPinturaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECPinturaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pisos"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECPisosEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECPisosComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Impermeabilización"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECImpermeEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECImpermeComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hidrosanitario"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECHidrosanitarioEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECHidrosanitarioComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Herrajes"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECHerrejesEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECHerrejesComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Limpieza en General"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/ECLimpiezaGeneralEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/ECLimpiezaGeneralComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--Modulo3-->
+            <Button
+                android:id="@+id/Modulo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planta de Fuerza y Baterías" />
+            <LinearLayout
+                android:id="@+id/contenedorM3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Amperaje"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PFBAmperajeEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                            android:id="@+id/rbB16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PFBAmperajeComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Consumo de Planta"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PFBConsumoPlantaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PFBConsumoPlantaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rectificadores"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PFBRectificadoresEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PFBRectificadoresComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sistema de Inversor"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PFBSistemaInversorEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PFBSistemaInversorComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bancos de Baterías"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PFBBancosBateriasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PFBBancosBateriasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tablero de Distribución"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PFBTablerosEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PFBTablerosComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo4-->
+            <Button
+                android:id="@+id/Modulo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistema de UPS" />
+            <LinearLayout
+                android:id="@+id/contenedorM4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Alimentación Eléctrica"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SUAlimentacionElectricaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SUAlimentacionElectricaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Alármas"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SUAlarmasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SUAlarmasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Carga"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SUCargaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SUCargaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Descarga"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SUDescargaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SUDescargaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo5-->
+            <Button
+                android:id="@+id/Modulo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistema Contra Incendio" />
+            <LinearLayout
+                android:id="@+id/contenedorM5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sistema"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SCISistemaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SCISistemaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Detectores"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SCIDetectoresEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SCIDetectoresComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Extintores"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SCIExtintoresEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SCIExtintoresComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Granadas / Tanques"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SCIGranadaTanquesEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SCIGranadaTanquesComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fecha de Caducidad"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SCIFechaCaducidadEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SCIFechaCaducidadComentraios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo6-->
+            <Button
+                android:id="@+id/Modulo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planta de Emergencia" />
+            <LinearLayout
+                android:id="@+id/contenedorM6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fugas de Aceite"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PEFugasAceiteEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/PEFugasAceiteComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Filtros"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PEFiltrosEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PEFiltrosComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Temperatura"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PETemperaturaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PETemperaturaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bandas"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PEBandasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PEBandasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Baterías"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PEBateriasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/rbB35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PEBateriasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lubricación"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PELubricacionEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PELubricacionComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Combustible"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PECombustibleEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PECombustibleComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Arranque Manual sin Carga"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PEArranqueManualEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PEArranqueManualComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Limpieza en General"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/PELimpiezaGenetalEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/PELimpiezaGenetalComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo7-->
+            <Button
+                android:id="@+id/Modulo7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguridad y Accesos" />
+            <LinearLayout
+                android:id="@+id/contenedorM7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lectoras o Cerraduras"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SALectorasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SALectorasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tableros de Control"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SATablerosControlEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SATablerosControlComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--Modulo8-->
+            <Button
+                android:id="@+id/Modulo8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subestación y Sistema Eléctrico" />
+            <LinearLayout
+                android:id="@+id/contenedorM8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Barras de Puesta a Tierra"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSBarrasPuestaTierraEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+
+                    </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSBarrasPuestaTierraComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Conexiones de Puesta a Tierra"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSConexionPuestaTierraEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSConexionPuestaTierraComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Transformador"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSTransformadorEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSTransformadorComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fusibles"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSFusiblesEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSFusiblesComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Temperatura"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSTemperaturaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSTemperaturaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cuchillas"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSCuchillasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSCuchillasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Interruptores"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/SSInterruptoresEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB48"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM48"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN48"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/SSInterruptoresComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="30dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="L1"
+                                android:textColor="@android:color/black"
+                                android:textAlignment="center"/>
+                            <EditText
+                                android:id="@+id/l1"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="5dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="L2"
+                                android:textColor="@android:color/black"
+                                android:textAlignment="center"/>
+                            <EditText
+                                android:id="@+id/l2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="5dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="L3"
+                                android:textColor="@android:color/black"
+                                android:textAlignment="center"/>
+                            <EditText
+                                android:id="@+id/l3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="5dp" />
+
+                        </LinearLayout>
+                        
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+                            <TextView
+
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="A1"
+                                android:textColor="@android:color/black"
+                                android:textAlignment="center"/>
+                            <EditText
+                                android:id="@+id/a1"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="5dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="A2"
+                                android:textColor="@android:color/black"
+                                android:textAlignment="center"/>
+                            <EditText
+                                android:id="@+id/a2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="5dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="3dp">
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="A3"
+                                android:textColor="@android:color/black"
+                                android:textAlignment="center"/>
+                            <EditText
+                                android:id="@+id/a3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/radiosedittext"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--Modulo9-->
+            <Button
+                android:id="@+id/Modulo9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Torres de Telecomunicaciones" />
+            <LinearLayout
+                android:id="@+id/contenedorM9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Limpieza General y Pintura"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/TELimpizaGeneralEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB49"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM49"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN49"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/TELimpizaGeneralComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Anclas y Retenidos"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/TEAnclasRetenidosEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/TEAnclasRetenidosComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Luces de Obstrucción"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/TELucesObstruccionEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/TELucesObstruccionComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tornillería y Herraje"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/TETornilleriaEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/TETornilleriaComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Puesta a Tierra"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/TEPuestaTierraEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/TEPuestaTierraComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sistema de Aparta Rayos"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/TESistemaApartaRayosEststus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/TESistemaApartaRayosComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo10-->
+            <Button
+                android:id="@+id/Modulo10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hidrosanitario" />
+            <LinearLayout
+                android:id="@+id/contenedorM10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fugas en General"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/HFugasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/HFugasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bombas/Hidroneumáticos"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"/>
+
+                        <RadioGroup
+                            android:id="@+id/HBombasEstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbB56"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B" />
+
+                            <RadioButton
+                                android:id="@+id/rbM56"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M" />
+
+                            <RadioButton
+                                android:id="@+id/rbN56"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="N/A" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/HBombasComentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Modulo11-->
+            <Button
+                android:id="@+id/Modulo11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otros" />
+            <LinearLayout
+                android:id="@+id/contenedorM11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros6"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros7"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario7"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Otros8"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Descripción"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:id="@+id/comentario8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radiosedittext"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="Adicionales"
+                        android:layout_marginBottom="7dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Modulo Regresar-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/PW_BTN_back"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btngris"
+                    android:text="CANCELAR"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_Guardar"
+                    android:layout_width="106dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnnaranja"
+                    android:text="GUARDAR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+<!--
+  <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="N/A" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"/>
+                <EditText
+                            
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiosedittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+
+-->

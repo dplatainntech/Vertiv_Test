@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formatos.Refaccion.RefaMenu"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp">
+            <!--<Button
+                android:id="@+id/btn_PorFolio"
+                android:layout_width="106dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/foliodescrefa"/>-->
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:background="@drawable/cuadrogrisrefa"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="2dp">
+                <Spinner
+                    android:id="@+id/FiltroStatus"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lista1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

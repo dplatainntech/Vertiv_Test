@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string-array name="calificacionesEva">
+    <item ></item>
+    <item >5</item>
+    <item android:background="@color/cuatro">4</item>
+    <item android:background="@color/tres">3</item>
+    <item android:background="@color/dos">2</item>
+    <item android:background="@color/uno">1</item>
+</string-array>
+</resources>

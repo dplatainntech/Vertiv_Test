@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+
+    <color name="naranjaVartiv">#FD5B0A</color>
+
+    <color name="cinco">#06AB08</color>
+    <color name="cuatro">#8FC801</color>
+    <color name="tres">#FFE800</color>
+    <color name="dos">#FF8300</color>
+    <color name="uno">#FF0000</color>
+    <color name="morado">#9e99ff</color>
+
+
+  <!--
+  <color name="colorPrimary">#008577</color>
+  <color name="colorPrimaryDark">#00574B</color>
+  <color name="colorAccent">#D81B60</color>
+  -->
+</resources>
